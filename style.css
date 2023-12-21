@@ -1,0 +1,23 @@
+body{
+    background-image: url(assessment-strategy-evaluation-prioritize-icons_53876-120703.avif);
+    background-size: cover;
+}
+#dispDiv{
+    background-image: linear-gradient(50deg,#d49068,#ffed4a);
+    text-align: center;
+}
+#displayButton{
+    border-radius: 30px;
+    outline: none;
+    background-color: rgba(218, 189, 24, 0.767);
+}
+input{
+    border-radius: 30px;
+    outline: none;
+    background-color: rgba(218, 189, 24, 0.767);
+}
+select{
+    border-radius: 30px;
+    outline: none;
+    background-color: rgba(218, 189, 24, 0.767);
+}

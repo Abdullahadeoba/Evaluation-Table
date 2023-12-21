@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Table</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+       Columns <input id="column" type="number">
+       Rows <input  id="row" type="number">
+       Evaluation 
+       <select name="" id="operators">
+           <option value="+">ADD</option>
+           <option value="-">SUBTRACT</option>
+           <option value="*">MULTIPLY</option>
+           <option id="divider" value="/">DIVIDE</option>
+       </select>
+       <button id="displayButton" onclick="displayAll()">Make me a Table</button>
+       <br>
+       <br>
+       <br>
+       <br>
+    
+       <table id="dispDiv" border="3">
+
+       <table>
+    </center>
+
+       <script>
+            var tabRow = row.value;
+            var tabColumn = column.value;
+
+            function displayAll(val){
+            var sign = operators.value
+            var tab = "<table>"
+            tab += "<tr>"
+            for (var i = 1; i<=parseInt(column.value); i++){
+                tab += "<td>"
+                for (var j=1; j<=parseInt(row.value);j++){
+                    var calcValue = (eval(i + sign + j))
+
+                    if (calcValue % 1 !==0){
+                        var calcValue = parseFloat(eval(i + sign + j)).toFixed(2)
+                    }
+                    tab+= i + sign + j + "=" + calcValue +"<br>" + "<br>" ;
+                }
+                    
+            }
+            tab+= "</table>"
+            dispDiv.innerHTML = tab
+           }
+
+       </script>
+</body>
+</html>
