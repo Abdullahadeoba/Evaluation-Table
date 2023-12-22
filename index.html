@@ -32,13 +32,13 @@
             var tabRow = row.value;
             var tabColumn = column.value;
 
-            function displayAll(val){
+            function displayAll(){
             var sign = operators.value
             var tab = "<table>"
             tab += "<tr>"
-            for (var i = 1; i<=parseInt(column.value); i++){
+            for (i = 1; i<=parseInt(column.value); i++){
                 tab += "<td>"
-                for (var j=1; j<=parseInt(row.value);j++){
+                for (j=1; j<=parseInt(row.value);j++){
                     var calcValue = (eval(i + sign + j))
 
                     if (calcValue % 1 !==0){
