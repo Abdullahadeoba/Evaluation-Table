@@ -3,8 +3,8 @@ body{
     background-size: cover;
 }
 #dispDiv{
-    background-image: linear-gradient(50deg,#d49068,#ffed4a);
-    text-align: center;
+     background-image: linear-gradient(360deg,#adf99a,#924aff); 
+     text-align: center;
 }
 #displayButton{
     border-radius: 30px;
