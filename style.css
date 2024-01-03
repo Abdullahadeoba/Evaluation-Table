@@ -9,27 +9,37 @@ body{
 #displayButton{
     border-radius: 30px;
     outline: none;
-    background-color: rgba(218, 189, 24, 0.767);
+     background-image: linear-gradient(360deg,#adf99a,#924aff); 
 }
 input{
     border-radius: 30px;
     outline: none;
-    background-color: rgba(218, 189, 24, 0.767);
+    background-image: linear-gradient(360deg,#adf99a,#924aff); 
 }
 select{
     border-radius: 30px;
     outline: none;
-    background-color: rgba(218, 189, 24, 0.767);
+    background-image: linear-gradient(360deg,#adf99a,#924aff); 
 }
-@media  (max-width:475px){
+@media screen and  (min-width:475px){
     body{
         width: 100%;
         height: 100vh;
+        overflow-x: hidden;
     }
 }
-@media  (min-width:475px){
+@media screen and  (max-width:475px){
     body{
         width: 100%;
         height: 100vh;
+        overflow-x: hidden;
+    }
+   .center{
+        display: grid;
+        width: 100%;
+    }
+    table{
+        width: 100%;
+       
     }
 }
